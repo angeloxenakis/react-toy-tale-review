@@ -4,8 +4,6 @@ function ToyForm({ renderNewToy }) {
 
   const createToy = (e) => {
     e.preventDefault()
-    // console.log(e.target.name.value)
-    // console.log(e.target.image.value)
 
     fetch("http://localhost:3000/toys", {
       method: "POST",
